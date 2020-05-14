@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Align</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+
+      .container {
+        /* Use max-width rather than width so that when it goes down to mobile it will still be responsive and avoid scroll bars in mobile */
+        max-width: 960px;
+        margin: 30px auto;
+      }
+
+      /* Clear utility class that deals with the floats so that the next div does not sit behind the oher divs. Down below a div will be inserted that will clear the floats that has the class of .clr  */
+      .clr {
+        clear: both;
+      }
+
+      .box {
+        background-color: #f4f4f4;
+        border: 1px solid #333;
+        margin-bottom: 15px;
+        padding: 0 20px 15px 20px;
+      }
+
+      .box p {
+        text-align: justify;
+      }
+
+      .box h3 {
+        text-align: center;
+      }
+
+      #box-2 {
+        float: left;
+        width: 69%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 29%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          expedita consectetur temporibus odio facere doloremque itaque,
+          quaerat, nemo tenetur, repellat molestias labore possimus laudantium
+          ipsam?
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          expedita consectetur temporibus odio facere doloremque itaque,
+          quaerat, nemo tenetur, repellat molestias labore possimus laudantium
+          ipsam?
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          expedita consectetur temporibus odio facere doloremque itaque,
+          quaerat, nemo tenetur, repellat molestias labore possimus laudantium
+          ipsam?
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          expedita consectetur temporibus odio facere doloremque itaque,
+          quaerat, nemo tenetur, repellat molestias labore possimus laudantium
+          ipsam?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
