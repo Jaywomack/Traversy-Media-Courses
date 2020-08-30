@@ -469,3 +469,80 @@
  *
  * DATES AND TIME
  */
+
+// let val;
+
+// const today = new Date();
+// let birthday = new Date("9-10-1981 11:25:00");
+// birthday = new Date("september 10 1981 11:25:00");
+// birthday = new Date("9/10/1981 11:25:00");
+
+// val = today.getMonth();
+// val = today.getDate();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getMilliseconds();
+// val = today.getTime();
+
+// birthday.setMonth(6);
+// birthday.setDate(19);
+// birthday.setFullYear(1985);
+// birthday.setHours(3);
+// birthday.setMinutes(30);
+// birthday.setSeconds(25);
+
+// console.log(birthday);
+
+// console.log(val);
+/***
+ * If statements and comparison operators
+ *
+ *
+ */
+
+//  if(something) {
+//   do something
+//  } else {
+//    do somethings else
+// //  }
+
+// const id = "100"; // Single = sign means assignment
+
+// // Equal to
+// if (id == 100) {
+//   // == means that it is a comparison operator tests value but not type
+//   console.log("Correct");
+// } else {
+//   console.log("Incorrect");
+// }
+
+// // Not equal to
+// if (id != 100) {
+//   console.log("correct");
+// } else {
+//   console.log("Incorrect");
+// }
+
+// if (id === 100) {
+//   // === Compares type and value for strict equality
+//   console.log("Matches");
+// } else {
+//   console.log("No matches");
+// }
+
+// if (id !== 100) {
+//   console.log("Correct");
+// } else {
+//   console.log("incorrect");
+// }
+
+let id = 100;
+
+if (typeof id !== "undefined") {
+  console.log(`The ID is ${id}`);
+} else {
+  console.log("NO ID");
+}
