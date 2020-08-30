@@ -541,8 +541,121 @@
 
 let id = 100;
 
-if (typeof id !== "undefined") {
-  console.log(`The ID is ${id}`);
-} else {
-  console.log("NO ID");
-}
+// if (typeof id !== "undefined") {
+//   console.log(`The ID is ${id}`);
+// } else {
+//   console.log("NO ID");
+// }
+
+// if (id > 200) {
+//   console.log("OVer 200");
+// } else {
+//   console.log("Less than 200");
+// }
+
+// // IF ELSE
+
+// const color = "red";
+
+// if (color === "red") {
+//   console.log("Color is red");
+// } else if (color === "blue") {
+//   console.log("Color is blue");
+// } else {
+//   console.log("Color is not red or blue ");
+// }
+
+// LOGICAL OPERATORS
+
+// const name = "Steve";
+// const age = 16;
+
+// if (age > 0 && age < 13) {
+//   console.log(`${name} is a child.`);
+// } else if (age >= 13 && age <= 19) {
+//   console.log(`${name} is a teenager`);
+// } else {
+//   console.log(`${name} is an adult`);
+// }
+
+// // OR ||
+// if (age < 16 || age > 65) {
+//   console.log(`${name} can not run in the race`);
+// } else {
+//   console.log(`${name} is registered for the race`);
+// }
+
+// // Ternary Operator
+
+// console.log(id === 100 ? "Correct" : "Incorrect");
+
+/***
+ * SWITCHES
+ *
+ *
+ *
+ */
+
+// const color = "red";
+
+// switch (color) {
+//   case "red":
+//     console.log("Color is red");
+//     break;
+//   case "blue":
+//     console.log("Color is blue");
+//     break;
+//   default:
+//     console.log("Color is not red or blue");
+//     break;
+// }
+
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+//     break;
+// }
+
+// switch (new Date().getDay()) {
+//   case 0:
+//     dayInPortuguese = "Domingo";
+//     break;
+//   case 1:
+//     dayInPortuguese = "Segundo Feira";
+//     break;
+//   case 2:
+//     dayInPortuguese = "Terca Feira";
+//     break;
+//   case 3:
+//     dayInPortuguese = "Quarta Feira";
+//     break;
+//   case 4:
+//     dayInPortuguese = "Quinta Feira";
+//     break;
+//   case 5:
+//     dayInPortuguese = "Sexta Feira";
+//     break;
+//   case 6:
+//     dayInPortuguese = "Sabado";
+//     break;
+// }
+
+// console.log(`Today is ${day}. Hoje é ${dayInPortuguese}`);
