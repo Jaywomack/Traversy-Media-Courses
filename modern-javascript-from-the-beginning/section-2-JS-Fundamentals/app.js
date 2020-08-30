@@ -784,3 +784,102 @@ let id = 100;
 // for (let x in user) {
 //   console.log(`${x} : ${user[x]}`);
 // }
+
+/****
+ * WINDOW
+ * OBJECT
+ *
+ *
+ *
+ *
+ */
+
+// WINDOWS  / OBJECTS / PROPERTIES
+
+// console.log(123);
+
+// Alert
+// window.alert("Wassup motha trucka!");
+
+// PROMPT
+
+// const input = prompt();
+// alert(input);
+
+// Confirm
+// if (confirm("Are you sure")) {
+//   console.log("Yes");
+// } else {
+//   console.log("No");
+// }
+
+// Get the height and width of the window
+
+// let val;
+
+// // Outter height and width
+// val = window.outerHeight;
+// val = window.outerWidth;
+// // Inner Height and widdth of the window
+// val = window.innerHeight;
+// val - window.innerWidth;
+
+// // Scroll points
+// val = window.scrollY;
+// val = window.scrollX;
+
+// // Location Object
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.href;
+// val = window.location.search;
+
+// // Redirect
+// // window.location.href = "http://google.com";
+
+// // Reload
+// // window.location.reload()
+
+// // History Object
+
+// // window.history.go(); // Take you to a previously visited page
+// val = window.history.length;
+
+// // Navigator Object
+// val = window.navigator;
+
+// console.log(val);
+
+/****
+ * SCOPE
+ *
+ * BLOCK SCOPE WITH LET AND CONST
+ */
+
+// Global scope
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+// // function test() {
+// //   var a = 4;
+// //   let b = 5;
+// //   const c = 6;
+// //   console.log("Function scope", a, b, c);
+// // }
+// // test();
+
+// // if (true) {
+// //   // block scope
+// //   var a = 4;
+// //   let b = 5;
+// //   const c = 6;
+// //   console.log("If scope", a, b, c );
+// // }
+
+// for (let a = 0; a < 10; a++) {
+//   console.log(`Loop: ${a}`);
+// }
+
+// console.log("global scope: ", a, b, c);
