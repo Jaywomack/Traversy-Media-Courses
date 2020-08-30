@@ -242,68 +242,230 @@
  * String Methods and Concatenation
  */
 
-const firstName = "William";
-const lastName = "Johnson";
-const age = 35;
-const str = "Hello there my name is Brad";
-const tags = "web design,web devlopment,design";
+// const firstName = "William";
+// const lastName = "Johnson";
+// const age = 35;
+// const str = "Hello there my name is Brad";
+// const tags = "web design,web devlopment,design";
 
-let val;
+// let val;
 
-val = firstName + lastName;
+// val = firstName + lastName;
 
-// Concatenation
+// // Concatenation
 
-val = firstName + " " + lastName;
+// val = firstName + " " + lastName;
 
-// Append on to the end of a variable +=
-val = "Brad ";
-val += "Traversy";
+// // Append on to the end of a variable +=
+// val = "Brad ";
+// val += "Traversy";
 
-val = "Hello, my name is " + firstName + " and I am " + age;
+// val = "Hello, my name is " + firstName + " and I am " + age;
 
-// Escaping characters
-val = "That/'s  awesome I can/'t wait";
-val = "That's awesomse I can't wait.";
+// // Escaping characters
+// val = "That/'s  awesome I can/'t wait";
+// val = "That's awesomse I can't wait.";
 
-// Length
-val = firstName.length; // () are only needed for methods not properties
+// // Length
+// val = firstName.length; // () are only needed for methods not properties
 
-// concat
-val = firstName.concat(" ", lastName);
+// // concat
+// val = firstName.concat(" ", lastName);
 
-// Change Case
-val = firstName.toUpperCase();
-val = lastName.toLowerCase();
+// // Change Case
+// val = firstName.toUpperCase();
+// val = lastName.toLowerCase();
 
-val = firstName[0];
+// val = firstName[0];
 
-// indexOf()
-val = firstName.indexOf("l");
-val = firstName.lastIndexOf("l");
+// // indexOf()
+// val = firstName.indexOf("l");
+// val = firstName.lastIndexOf("l");
 
-// charAt()
-val = firstName.charAt("2");
+// // charAt()
+// val = firstName.charAt("2");
 
-// get last character
-val = firstName.charAt(firstName.length - 1);
+// // get last character
+// val = firstName.charAt(firstName.length - 1);
 
-// substring()
-val = firstName.substring(0, 4);
+// // substring()
+// val = firstName.substring(0, 4);
 
-// slice()
-val = firstName.slice(0, 4);
-val = firstName.slice(-3);
+// // slice()
+// val = firstName.slice(0, 4);
+// val = firstName.slice(-3);
 
-// split()
-val = str.split(" ");
-val = tags.split(",");
+// // split()
+// val = str.split(" ");
+// val = tags.split(",");
 
-// replace()
-val = str.replace("Brad", "Jack");
+// // replace()
+// val = str.replace("Brad", "Jack");
 
-// includes()
-val = str.includes("Hello");
-val = str.includes("Foo");
+// // includes()
+// val = str.includes("Hello");
+// val = str.includes("Foo");
 
-console.log(val);
+// console.log(val);
+
+/***
+ * Template Literals
+ *
+ *
+ */
+
+// const name = "John";
+// const age = 31;
+// const job = "Web Developer";
+// const city = "Miami";
+// let html;
+// // Without template strings (es5)
+// // html =
+// //   "<ul><li>Name: " +
+// //   name +
+// //   "</li><li>Age: " +
+// //   age +
+// //   "</li><li>Job: " +
+// //   job +
+// //   "</li><li>City: " +
+// //   city +
+// //   "</li></ul>";
+
+// // With template strings
+
+// html = `
+// <ul>
+//   <li>Name: ${name}</li>
+//   <li>Age: ${age}</li>
+//   <li>Job: ${job}</li>
+//   <li>City: ${city}</li>
+//   <li>${2 + 2}</li>
+//   <li>${age > 30 ? "Over 30" : "Under 30"}</li>
+// </ul>`;
+
+// document.body.innerHTML = html;
+
+/***
+ * Arrays and Array Methods
+ *
+ *
+ *
+//  */
+
+// // Create Some Arrays
+// const numbers = [43, 56, 33, 23, 44, 36, 5];
+// const numbers2 = new Array(22, 45, 33, 76, 54);
+// const fruit = ["Apple", "Banana", "Orange", "Pear"];
+// const mixed = [22, "Hello", true, undefined, null, { a: 1, b: 1 }, new Date()];
+
+// let val;
+
+// // Get array length
+// val = numbers.length;
+// // Check if is array
+// val = Array.isArray(numbers);
+// // Get a single value
+// val = numbers[3]; // Arrays are 0 based
+// val = numbers[0];
+// // Insert into array
+// numbers[2] = 100;
+// // find index of a value
+// val = numbers.indexOf(36);
+
+// // Mutating Arrays
+
+// // // Add onto the end
+// // numbers.push(250);
+// // // Add onto the front
+// // numbers.unshift(120);
+// // // Take off from end
+// // numbers.pop();
+// // // Take off from the front
+// // numbers.shift();
+// // // Splice values
+// // numbers.splice(1, 3);
+// // // Reverse the array
+// // numbers.reverse();
+
+// // concatenate array
+// val = numbers.concat(numbers2);
+
+// // Sorting arrays
+// val = fruit.sort();
+// // val = numbers.sort();
+
+// // Use the "compare" function
+// // val = numbers.sort(function (x, y) {
+// //   return x - y;
+// // });
+
+// // // reverse sort
+// // val = numbers.sort(function (x, y) {
+// //   return y - x;
+// // });
+
+// // Find
+// function under50(num) {
+//   return num < 50;
+// }
+
+// function over50(num) {
+//   return num > 50;
+// }
+
+// val = numbers.find(under50);
+// val = numbers.find(over50);
+// console.log(numbers);
+// console.log(val);
+
+/****
+ *
+ * Object Literals
+ */
+
+// const person = {
+//   firstName: "Steve",
+//   lastName: "Smith",
+//   age: 35,
+//   email: "steve@aol.com",
+//   hobbies: ["music", "sports"],
+//   address: {
+//     city: "Miami",
+//     state: "FL",
+//   },
+//   getBirthYear: function () {
+//     return 2020 - this.age;
+//   },
+// };
+
+// let val;
+
+// val = person;
+
+// // Get specific value
+// val = person.firstName;
+// val = person.age;
+// val = person.hobbies;
+// val = person.hobbies[1];
+// val = person.address;
+// val = person.address.state;
+// val = person.address["city"];
+// val = person.getBirthYear();
+
+// console.log(val);
+
+// const people = [
+//   { name: "John", age: 30 },
+//   { name: "Mike", age: 23 },
+//   { name: "Whitney", age: 29 },
+// ];
+
+// for (let i = 0; i < people.length; i++) {
+//   console.log(people[i].name);
+// }
+
+/*****
+ *
+ *
+ * DATES AND TIME
+ */
