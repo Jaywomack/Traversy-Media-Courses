@@ -659,3 +659,128 @@ let id = 100;
 // }
 
 // console.log(`Today is ${day}. Hoje é ${dayInPortuguese}`);
+/*****
+ *
+ *
+ * FUNCTIONS DECLARATIONS
+ *
+ */
+
+// function greet(firstName = "John", lastName = "Doe") {
+//   // console.log("Hello");
+//   return "Hello " + firstName + " " + lastName;
+// }
+
+// // console.log(greet());
+
+// // Function Expressions
+
+// const square = function (x) {
+//   return Math.pow(x, 2);
+// };
+
+// console.log(square(2));
+
+// Immediately Invokable Function Expressions - IIFEs
+
+// (function () {
+//   console.log("IIFE RAN..");
+// })();
+
+// (function (name) {
+//   console.log("Hello " + name);
+// })("Jay");
+
+// Property Methods
+// When a function is put inside an object it is called a method
+
+// const todo = {
+//   add: function () {
+//     console.log("Add todo..");
+//   },
+//   edit: function (id) {
+//     console.log(`Edit todo ${id}`);
+//   },
+// };
+
+// todo.delete = function () {
+//   console.log("Delete todo...");
+// };
+
+// todo.add();
+// todo.edit(22);
+// todo.delete();
+
+/***
+ * GENERAL LOOPS
+ *
+ *
+ */
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i === 2) {
+//     console.log("2 is my favorite number");
+//     continue;
+//   }
+//   if (i === 5) {
+//     console.log("Stop the loop");
+//     break;
+//   }
+//   console.table(`The number is ${i}`);
+// }
+
+// WHILE LOOP
+
+// let i = 0;
+
+// while (i <= 10) {
+//   console.log(`The number is ${i}`);
+//   i++;
+// }
+
+// DO LOOP
+
+// let i = 0;
+
+// do {
+//   console.log(`Number ${i}`);
+//   i++;
+// } while (i <= 10);
+
+//  looping through arrays
+
+// const cars = ["Ford", "Chevy", "Honda", "Toyota"];
+
+// // for (let i = 0; i < cars.length; i++) {
+// //   console.log(cars[i]);
+// // }
+
+// // Foreach method to loop through an array
+// cars.forEach((car, index) => {
+//   console.log(`${index + 1} ${car} `);
+// });
+
+// // MAP
+// const users = [
+//   { id: 1, name: "John" },
+//   { id: 2, name: "Sara" },
+//   { id: 3, name: "Karen" },
+// ];
+
+// const ids = users.map((user) => {
+//   return user.id;
+// });
+
+// console.log(ids);
+
+// FOR IN Loop
+
+// const user = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 35,
+// };
+
+// for (let x in user) {
+//   console.log(`${x} : ${user[x]}`);
+// }
