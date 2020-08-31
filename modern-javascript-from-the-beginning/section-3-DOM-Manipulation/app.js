@@ -126,19 +126,85 @@
 
 // document.querySelectorAll()
 
-const items = document.querySelectorAll("ul.collection li.collection-item");
+// const items = document.querySelectorAll("ul.collection li.collection-item");
 
-items.forEach((item, index) => {
-  item.textContent = `${index}: task`;
-});
+// items.forEach((item, index) => {
+//   item.textContent = `${index}: task`;
+// });
 
-const liOdd = document.querySelectorAll("li:nth-child(odd)");
-const liEven = document.querySelectorAll("li:nth-child(even)");
-liOdd.forEach((li) => {
-  li.style.background = "#ccc";
-});
-liEven.forEach((li) => {
-  li.style.background = "#f4f4f4";
-});
+// const liOdd = document.querySelectorAll("li:nth-child(odd)");
+// const liEven = document.querySelectorAll("li:nth-child(even)");
+// liOdd.forEach((li) => {
+//   li.style.background = "#ccc";
+// });
+// liEven.forEach((li) => {
+//   li.style.background = "#f4f4f4";
+// });
 
-console.log(items);
+// console.log(items);
+
+/***
+ *
+ * TRAVERSING THE DOM
+ *
+ */
+
+// let val;
+
+// const list = document.querySelector("ul.collection");
+// const listItem = document.querySelector("li.collection-item:first-child");
+
+// val = listItem;
+// // val = list;
+
+// // Get Child Nodes
+// val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[0].nodeName;
+// val = list.childNodes[1].nodeType;
+
+// // Node Types
+// // 1 Element
+// // 2 Attribute (deprecated)
+// // 3 Text Node
+// // 8 Comment
+// // 9 Document itself
+// // 10 Doctype
+
+// // Get children element nodes HTML collection
+// val = list.children;
+// val = list.children[1];
+// list.children[1].textContent = "Hello";
+// // Children of children
+// val = list.children[3].children[0];
+
+// // First Child
+// val = list.firstChild; // Will include text nodes
+// val = list.firstElementChild; // Will not include text nodes
+// // Last child
+// val = list.lastChild;
+// val = list.lastElementChild;
+
+// // Count Child elements
+// val = list.childElementCount;
+
+// // Get parent node
+// val = listItem.parentNode;
+// val = listItem.parentElement;
+// val = listItem.parentElement.parentElement;
+
+// // Get next sibling
+// val = listItem.nextSibling;
+// val = listItem.nextElementSibling;
+
+// // Get previous sibling
+// val = listItem.previousSibling;
+// val = listItem.previousElementSibling;
+
+// console.log(val);
+
+/*****
+ *
+ *
+ * CREATING ELEMENTS
+ */
